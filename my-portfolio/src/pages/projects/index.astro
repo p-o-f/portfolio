@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+const sortedProjects = projects.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout title="Projects - Parth">
+  <div class="container page">
+    <header class="page-header">
+      <h1>Projects</h1>
+      <p class="text-muted">Things I've built and worked on.</p>
+    </header>
+    
+    {sortedProjects.length > 0 ? (
+      <div class="project-grid">
+        {sortedProjects.map(project => (
+          <a href={`/projects/${project.id}`} class="card project-card">
+            <h2>{project.data.title}</h2>
+            <p>{project.data.description}</p>
+            {project.data.tags && (
+              <div class="tags">
+                {project.data.tags.map(tag => (
+                  <span class="tag">{tag}</span>
+                ))}
+              </div>
+            )}
+            <div class="project-links">
+              {project.data.link && (
+                <span class="project-link">Live Demo</span>
+              )}
+              {project.data.github && (
+                <span class="project-link">GitHub</span>
+              )}
+            </div>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <div class="empty-state">
+        <p class="text-muted">No projects yet. Add markdown files to <code>src/content/projects/</code></p>
+      </div>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .page-header {
+    margin-bottom: var(--space-2xl);
+  }
+  
+  .page-header p {
+    margin-top: var(--space-sm);
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-lg);
+  }
+  
+  .project-card h2 {
+    font-size: 1.25rem;
+    margin-bottom: var(--space-sm);
+  }
+  
+  .project-card p {
+    margin-bottom: var(--space-md);
+    color: var(--color-text-muted);
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+  }
+  
+  .project-links {
+    display: flex;
+    gap: var(--space-md);
+    font-size: 0.875rem;
+    color: var(--color-accent);
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: var(--space-3xl);
+  }
+</style>

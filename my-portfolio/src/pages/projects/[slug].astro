@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map(project => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+---
+
+<BaseLayout title={`${project.data.title} - Projects`}>
+  <article class="container page">
+    <header class="project-header">
+      <a href="/projects" class="back-link">← Back to Projects</a>
+      <h1>{project.data.title}</h1>
+      <p class="description">{project.data.description}</p>
+      
+      {project.data.tags && (
+        <div class="tags">
+          {project.data.tags.map(tag => (
+            <span class="tag">{tag}</span>
+          ))}
+        </div>
+      )}
+      
+      <div class="project-actions">
+        {project.data.link && (
+          <a href={project.data.link} class="btn btn-primary" target="_blank" rel="noopener">
+            View Live →
+          </a>
+        )}
+        {project.data.github && (
+          <a href={project.data.github} class="btn" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        )}
+      </div>
+    </header>
+    
+    <div class="content prose">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .back-link {
+    display: inline-block;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .back-link:hover {
+    color: var(--color-accent);
+  }
+  
+  .project-header {
+    margin-bottom: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid var(--color-border);
+  }
+  
+  .project-header h1 {
+    margin-bottom: var(--space-md);
+  }
+  
+  .description {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .project-actions {
+    display: flex;
+    gap: var(--space-md);
+  }
+  
+  .content {
+    max-width: 700px;
+  }
+</style>

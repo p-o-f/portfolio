@@ -1,0 +1,190 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog', ({ data }) => !data.draft);
+const recentPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
+
+const projects = await getCollection('projects');
+const featuredProjects = projects.filter(p => p.data.featured).slice(0, 3);
+---
+
+<BaseLayout title="Parth - Developer & Creator">
+  <section class="hero container page">
+    <div class="hero-content">
+      <p class="hero-greeting">Hey, I'm</p>
+      <h1 class="hero-name">Parth</h1>
+      <p class="hero-tagline">
+        Developer, creator, and lifelong learner. I build things for the web 
+        and write about what I learn along the way.
+      </p>
+      <div class="hero-actions">
+        <a href="/about" class="btn btn-primary">About Me</a>
+        <a href="/projects" class="btn">View Projects</a>
+      </div>
+    </div>
+  </section>
+  
+  {featuredProjects.length > 0 && (
+    <section class="container section">
+      <div class="section-header">
+        <h2>Featured Projects</h2>
+        <a href="/projects" class="section-link">View all →</a>
+      </div>
+      <div class="project-grid">
+        {featuredProjects.map(project => (
+          <a href={`/projects/${project.id}`} class="card project-card">
+            <h3>{project.data.title}</h3>
+            <p class="text-muted">{project.data.description}</p>
+            {project.data.tags && (
+              <div class="tags">
+                {project.data.tags.map(tag => (
+                  <span class="tag">{tag}</span>
+                ))}
+              </div>
+            )}
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+  
+  {recentPosts.length > 0 && (
+    <section class="container section">
+      <div class="section-header">
+        <h2>Recent Posts</h2>
+        <a href="/blog" class="section-link">View all →</a>
+      </div>
+      <div class="post-list">
+        {recentPosts.map(post => (
+          <a href={`/blog/${post.id}`} class="card post-card">
+            <div class="post-meta">
+              <time datetime={post.data.date.toISOString()}>
+                {post.data.date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+              </time>
+            </div>
+            <h3>{post.data.title}</h3>
+            <p class="text-muted">{post.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+</BaseLayout>
+
+<style>
+  .hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .hero-greeting {
+    font-size: 1.125rem;
+    color: var(--color-accent);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .hero-name {
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--space-lg);
+    background: linear-gradient(135deg, var(--color-text) 0%, var(--color-text-muted) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-tagline {
+    font-size: 1.25rem;
+    max-width: 500px;
+    margin-bottom: var(--space-xl);
+  }
+  
+  .hero-actions {
+    display: flex;
+    gap: var(--space-md);
+  }
+  
+  .section {
+    padding: var(--space-3xl) 0;
+  }
+  
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--space-xl);
+  }
+  
+  .section-link {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+  
+  .section-link:hover {
+    color: var(--color-accent);
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-lg);
+  }
+  
+  .project-card h3 {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .project-card p {
+    margin-bottom: var(--space-md);
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+  }
+  
+  .post-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  
+  .post-card {
+    display: block;
+  }
+  
+  .post-card h3 {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .post-card p {
+    margin-bottom: 0;
+  }
+  
+  .post-meta {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .post-meta time {
+    font-size: 0.875rem;
+    color: var(--color-text-subtle);
+  }
+  
+  @media (max-width: 640px) {
+    .hero-name {
+      font-size: 2.5rem;
+    }
+    
+    .hero-tagline {
+      font-size: 1rem;
+    }
+    
+    .hero-actions {
+      flex-direction: column;
+    }
+  }
+</style>

@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="About - Parth">
+  <article class="container page">
+    <header class="page-header">
+      <h1>About Me</h1>
+    </header>
+    
+    <div class="content prose">
+      <p>
+        Hi! I'm Parth – a developer passionate about building useful things 
+        for the web. I love exploring new technologies and turning ideas into reality.
+      </p>
+      
+      <h2>What I Do</h2>
+      <p>
+        I specialize in full-stack web development, with a focus on creating 
+        clean, performant, and user-friendly applications. My toolkit includes 
+        modern frameworks and a keen eye for design.
+      </p>
+      
+      <h2>Hobbies & Interests</h2>
+      <p>
+        When I'm not coding, you can find me:
+      </p>
+      <ul>
+        <li>Reading about tech and productivity</li>
+        <li>Exploring new music and podcasts</li>
+        <li>Working on side projects</li>
+        <li>Learning something new</li>
+      </ul>
+      
+      <h2>Resume</h2>
+      <p>
+        Want to know more about my professional experience? Check out my resume below.
+      </p>
+      <a href="/resume.pdf" class="btn btn-primary" target="_blank">
+        Download Resume (PDF)
+      </a>
+      
+      <h2>Get in Touch</h2>
+      <p>
+        Feel free to reach out! I'm always happy to chat about projects, 
+        collaborations, or just say hi.
+      </p>
+      <ul class="contact-links">
+        <li><a href="https://github.com/yourusername">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/yourusername">LinkedIn</a></li>
+        <li><a href="mailto:your@email.com">Email</a></li>
+      </ul>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .page-header {
+    margin-bottom: var(--space-2xl);
+  }
+  
+  .content {
+    max-width: 650px;
+  }
+  
+  .content h2 {
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-md);
+  }
+  
+  .content p {
+    font-size: 1.0625rem;
+  }
+  
+  .content ul {
+    margin-bottom: var(--space-lg);
+  }
+  
+  .contact-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: var(--space-lg);
+  }
+  
+  .contact-links a {
+    font-weight: 500;
+  }
+</style>
