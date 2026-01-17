@@ -6,7 +6,7 @@ const projects = await getCollection('projects');
 const sortedProjects = projects.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<BaseLayout title="Projects - Parth">
+<BaseLayout title="Projects">
   <div class="container page">
     <header class="page-header">
       <h1>Projects</h1>

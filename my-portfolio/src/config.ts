@@ -1,0 +1,30 @@
+// Site-wide configuration - edit these values once, used everywhere
+export const siteConfig = {
+  name: "Parthib",
+  fullname: "Parthib Faruk",
+  title: "Developer & Creator",
+  description: "Parthib's Portfolio - Developer, Creator, Explorer", // not visible, only for SEO meta tags 
+  
+  // Navigation
+  navLinks: [
+    { href: '/', label: 'Home' },
+    { href: '/about', label: 'About' },
+    { href: '/projects', label: 'Projects' },
+    { href: '/blog', label: 'Blog' },
+  ],
+};
+
+// Online Presence - Add/remove/edit your links here
+// Set any link to empty string "" or remove it to hide from the site
+export const socialLinks = {
+  github: "https://github.com/yourusername",
+  linkedin: "https://linkedin.com/in/yourusername",
+  email: "your@email.com",
+  resume: "/resume.pdf",  // Put resume.pdf in the /public folder
+  
+  // Add more as needed - uncomment or add new ones:
+  // twitter: "https://x.com/yourusername",
+  // youtube: "https://youtube.com/@yourusername",
+  // instagram: "https://instagram.com/yourusername",
+  // website: "https://yourwebsite.com",
+};

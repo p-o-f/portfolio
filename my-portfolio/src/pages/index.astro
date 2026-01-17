@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { siteConfig } from '../config';
 
 const posts = await getCollection('blog', ({ data }) => !data.draft);
 const recentPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
@@ -9,11 +10,11 @@ const projects = await getCollection('projects');
 const featuredProjects = projects.filter(p => p.data.featured).slice(0, 3);
 ---
 
-<BaseLayout title="Parth - Developer & Creator">
+<BaseLayout title={`${siteConfig.name} - ${siteConfig.title}`}>
   <section class="hero container page">
     <div class="hero-content">
       <p class="hero-greeting">Hey, I'm</p>
-      <h1 class="hero-name">Parth</h1>
+      <h1 class="hero-name">{siteConfig.name}</h1>
       <p class="hero-tagline">
         Developer, creator, and lifelong learner. I build things for the web 
         and write about what I learn along the way.

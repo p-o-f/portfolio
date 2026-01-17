@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SocialIcons from '../components/SocialIcons.astro';
+import { siteConfig, socialLinks } from '../config';
 ---
 
-<BaseLayout title="About - Parth">
+<BaseLayout title={`About`}>
   <article class="container page">
     <header class="page-header">
       <h1>About Me</h1>
@@ -10,7 +12,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     
     <div class="content prose">
       <p>
-        Hi! I'm Parth – a developer passionate about building useful things 
+        Hi! I'm {siteConfig.name} – a developer passionate about building useful things 
         for the web. I love exploring new technologies and turning ideas into reality.
       </p>
       
@@ -32,24 +34,24 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <li>Learning something new</li>
       </ul>
       
-      <h2>Resume</h2>
-      <p>
-        Want to know more about my professional experience? Check out my resume below.
-      </p>
-      <a href="/resume.pdf" class="btn btn-primary" target="_blank">
-        Download Resume (PDF)
-      </a>
+      {socialLinks.resume && (
+        <>
+          <h2>Resume</h2>
+          <p>
+            Want to know more about my professional experience? Check out my resume below.
+          </p>
+          <a href={socialLinks.resume} class="btn btn-primary" target="_blank">
+            Download Resume (PDF)
+          </a>
+        </>
+      )}
       
       <h2>Get in Touch</h2>
       <p>
         Feel free to reach out! I'm always happy to chat about projects, 
         collaborations, or just say hi.
       </p>
-      <ul class="contact-links">
-        <li><a href="https://github.com/yourusername">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/yourusername">LinkedIn</a></li>
-        <li><a href="mailto:your@email.com">Email</a></li>
-      </ul>
+      <SocialIcons size={28} />
     </div>
   </article>
 </BaseLayout>
