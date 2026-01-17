@@ -2,8 +2,8 @@
 export const siteConfig = {
   name: "Parthib",
   fullname: "Parthib Faruk",
-  title: "Developer & Creator",
-  description: "Parthib's Portfolio - Developer, Creator, Explorer", // not visible, only for SEO meta tags 
+  title: "Parthib's Portfolio",
+  description: "Parthib's Portfolio - Software Engineer, Engineer, Computer Engineer, Parthib Faruk", // not visible, only for SEO meta tags 
   
   // Navigation
   navLinks: [
