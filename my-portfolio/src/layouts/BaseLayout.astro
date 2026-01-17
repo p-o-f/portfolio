@@ -1,5 +1,6 @@
 ---
 import SpeedInsights from '@vercel/speed-insights/astro';
+import Analytics from '@vercel/analytics/astro';
 import '../styles/global.css';
 
 interface Props {
@@ -29,6 +30,7 @@ const navLinks = [
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>{title}</title>
+    <Analytics />
   </head>
   <body>
     <header class="header">
