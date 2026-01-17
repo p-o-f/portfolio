@@ -26,14 +26,11 @@ const sortedProjects = projects.sort((a, b) => b.data.date.valueOf() - a.data.da
                 ))}
               </div>
             )}
-            <div class="project-links">
-              {project.data.link && (
-                <span class="project-link">Live Demo</span>
-              )}
-              {project.data.github && (
-                <span class="project-link">GitHub</span>
-              )}
-            </div>
+            {project.data.link && (
+              <div class="project-links">
+                <span class="project-link">View Project →</span>
+              </div>
+            )}
           </a>
         ))}
       </div>

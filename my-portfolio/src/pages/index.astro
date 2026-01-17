@@ -91,10 +91,11 @@ const featuredProjects = projects.filter(p => p.data.featured).slice(0, 3);
     font-weight: 700;
     letter-spacing: -0.03em;
     margin-bottom: var(--space-lg);
-    background: linear-gradient(135deg, var(--color-text) 0%, var(--color-text-muted) 100%);
+    background: var(--color-accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 0 40px rgba(123, 92, 255, 0.5)) drop-shadow(0 0 60px rgba(255, 51, 153, 0.3));
   }
   
   .hero-tagline {

@@ -17,9 +17,9 @@ export const siteConfig = {
 // Online Presence - Add/remove/edit your links here
 // Set any link to empty string "" or remove it to hide from the site
 export const socialLinks = {
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
-  email: "your@email.com",
+  github: "https://github.com/p-o-f",
+  linkedin: "https://linkedin.com/in/pfaruk",
+  email: "pfaruk@asu.edu",
   resume: "/resume.pdf",  // Put resume.pdf in the /public folder
   
   // Add more as needed - uncomment or add new ones:

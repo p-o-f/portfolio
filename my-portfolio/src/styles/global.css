@@ -1,16 +1,27 @@
 /* ===== CSS Variables ===== */
 :root {
-  /* Colors - Dark theme */
-  --color-bg: #0a0a0b;
-  --color-bg-secondary: #141416;
-  --color-bg-tertiary: #1c1c1f;
-  --color-text: #e4e4e7;
-  --color-text-muted: #a1a1aa;
-  --color-text-subtle: #71717a;
-  --color-accent: #8b5cf6;
-  --color-accent-hover: #a78bfa;
-  --color-border: #27272a;
-  --color-border-hover: #3f3f46;
+  /* Colors - Neon Dark Theme (inspired by neon Clippy) */
+  --color-bg: #0d0b1a;              /* Deep blue-purple */
+  --color-bg-secondary: #141025;    /* Slightly lighter purple */
+  --color-bg-tertiary: #1c1635;     /* Card/elevated surfaces */
+  --color-text: #f0f0f8;
+  --color-text-muted: #b0a8c0;
+  --color-text-subtle: #7a7090;
+  
+  /* Neon accent colors - from the palette */
+  --color-accent: #7b5cff;           /* Vibrant purple-blue */
+  --color-accent-hover: #9171ff;
+  --color-accent-pink: #ff3399;      /* Hot pink/magenta */
+  --color-accent-cyan: #45e6ff;      /* Neon cyan */
+  --color-accent-gradient: linear-gradient(135deg, #45e6ff 0%, #7b5cff 40%, #ff3399 100%);
+  
+  --color-border: #2d2545;
+  --color-border-hover: #4a3d6a;
+  
+  /* Glow effects */
+  --glow-purple: 0 0 20px rgba(123, 92, 255, 0.4);
+  --glow-pink: 0 0 20px rgba(255, 51, 153, 0.4);
+  --glow-cyan: 0 0 20px rgba(69, 230, 255, 0.4);
   
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -164,19 +175,22 @@ hr {
 
 .btn:hover {
   background: var(--color-bg-tertiary);
-  border-color: var(--color-border-hover);
+  border-color: var(--color-accent);
   color: var(--color-text);
+  box-shadow: var(--glow-purple);
 }
 
 .btn-primary {
   background: var(--color-accent);
   border-color: var(--color-accent);
-  color: white;
+  color: #0a0a0f;
+  font-weight: 600;
 }
 
 .btn-primary:hover {
   background: var(--color-accent-hover);
   border-color: var(--color-accent-hover);
+  box-shadow: var(--glow-purple);
 }
 
 .tag {
@@ -186,7 +200,8 @@ hr {
   font-weight: 500;
   border-radius: 4px;
   background: var(--color-bg-tertiary);
-  color: var(--color-text-muted);
+  color: var(--color-accent);
+  border: 1px solid var(--color-border);
 }
 
 .card {
@@ -198,8 +213,9 @@ hr {
 }
 
 .card:hover {
-  border-color: var(--color-border-hover);
+  border-color: var(--color-accent);
   transform: translateY(-2px);
+  box-shadow: var(--glow-purple);
 }
 
 /* ===== Utilities ===== */
