@@ -3,14 +3,14 @@ export const siteConfig = {
   name: "Parthib",
   fullname: "Parthib Faruk",
   title: "Parthib's Portfolio",
-  description: "Parthib's Portfolio - Software Engineer, Engineer, Computer Engineer, Parthib Faruk", // not visible, only for SEO meta tags 
-  
+  description: "Parthib's Portfolio - Parthib Faruk, Software Engineer", // usually not visible, only for SEO meta tags
+
   // Navigation
   navLinks: [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/projects', label: 'Projects' },
-    { href: '/blog', label: 'Blog' },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/projects", label: "Projects" },
+    { href: "/blog", label: "Blog" },
   ],
 };
 
@@ -20,8 +20,9 @@ export const socialLinks = {
   github: "https://github.com/p-o-f",
   linkedin: "https://linkedin.com/in/pfaruk",
   email: "pfaruk@asu.edu",
-  resume: "/resume.pdf",  // Put resume.pdf in the /public folder
-  
+  resume:
+    "https://drive.google.com/file/d/1Ri2qokXQp71t5kGYuQrzlvaKqSCAfMrs/view?usp=sharing", // Put resume.pdf in the /public folder
+
   // Add more as needed - uncomment or add new ones:
   // twitter: "https://x.com/yourusername",
   // youtube: "https://youtube.com/@yourusername",
