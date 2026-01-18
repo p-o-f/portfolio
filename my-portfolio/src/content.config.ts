@@ -22,6 +22,7 @@ const projects = defineCollection({
     link: z.string().optional(),  // Can be GitHub, YouTube demo, live site, etc.
     image: z.string().optional(),
     featured: z.boolean().optional().default(false),
+    current: z.boolean().optional().default(false),  // true = Currently Working On, false = Past Project
   }),
 });
 

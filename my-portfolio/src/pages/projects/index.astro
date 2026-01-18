@@ -4,51 +4,103 @@ import { getCollection } from 'astro:content';
 
 const projects = await getCollection('projects');
 const sortedProjects = projects.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+// Split into current and past projects
+const currentProjects = sortedProjects.filter(p => p.data.current);
+const pastProjects = sortedProjects.filter(p => !p.data.current);
 ---
 
 <BaseLayout title="Projects">
   <div class="container page">
-    <header class="page-header">
-      <h1>Projects</h1>
-      <p class="text-muted">Things I've built and worked on.</p>
-    </header>
     
-    {sortedProjects.length > 0 ? (
-      <div class="project-grid">
-        {sortedProjects.map(project => (
-          <a href={`/projects/${project.id}`} class="card project-card">
-            <h2>{project.data.title}</h2>
-            <p>{project.data.description}</p>
-            {project.data.tags && (
-              <div class="tags">
-                {project.data.tags.map(tag => (
-                  <span class="tag">{tag}</span>
-                ))}
-              </div>
-            )}
-            {project.data.link && (
-              <div class="project-links">
-                <span class="project-link">View Project →</span>
-              </div>
-            )}
-          </a>
-        ))}
-      </div>
-    ) : (
-      <div class="empty-state">
-        <p class="text-muted">No projects yet. Add markdown files to <code>src/content/projects/</code></p>
-      </div>
-    )}
+    <!-- Currently Working On -->
+    <section class="projects-section">
+      <header class="section-header">
+        <h1>Currently Working On</h1>
+        <p class="text-muted">Projects and ideas I'm actively focusing on.</p>
+      </header>
+      
+      {currentProjects.length > 0 ? (
+        <div class="project-grid">
+          {currentProjects.map(project => (
+            <a href={`/projects/${project.id}`} class="card project-card">
+              <h2>{project.data.title}</h2>
+              <p>{project.data.description}</p>
+              {project.data.tags && (
+                <div class="tags">
+                  {project.data.tags.map(tag => (
+                    <span class="tag">{tag}</span>
+                  ))}
+                </div>
+              )}
+              {project.data.link && (
+                <div class="project-links">
+                  <span class="project-link">View Project →</span>
+                </div>
+              )}
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">
+          <p class="text-muted">No active projects at the moment.</p>
+        </div>
+      )}
+    </section>
+    
+    <!-- Past Projects -->
+    <section class="projects-section">
+      <header class="section-header">
+        <h2>Past Projects</h2>
+        <p class="text-muted">Completed work and projects I maintain on the side.</p>
+      </header>
+      
+      {pastProjects.length > 0 ? (
+        <div class="project-grid">
+          {pastProjects.map(project => (
+            <a href={`/projects/${project.id}`} class="card project-card">
+              <h2>{project.data.title}</h2>
+              <p>{project.data.description}</p>
+              {project.data.tags && (
+                <div class="tags">
+                  {project.data.tags.map(tag => (
+                    <span class="tag">{tag}</span>
+                  ))}
+                </div>
+              )}
+              {project.data.link && (
+                <div class="project-links">
+                  <span class="project-link">View Project →</span>
+                </div>
+              )}
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="empty-state">
+          <p class="text-muted">No past projects yet.</p>
+        </div>
+      )}
+    </section>
+    
   </div>
 </BaseLayout>
 
 <style>
-  .page-header {
-    margin-bottom: var(--space-2xl);
+  .projects-section {
+    margin-bottom: var(--space-3xl);
   }
   
-  .page-header p {
-    margin-top: var(--space-sm);
+  .section-header {
+    margin-bottom: var(--space-xl);
+  }
+  
+  .section-header h1 {
+    margin-bottom: var(--space-sm);
+  }
+  
+  .section-header h2 {
+    margin-bottom: var(--space-sm);
   }
   
   .project-grid {
@@ -82,7 +134,10 @@ const sortedProjects = projects.sort((a, b) => b.data.date.valueOf() - a.data.da
   }
   
   .empty-state {
+    padding: var(--space-xl);
+    background: var(--color-bg-secondary);
+    border: 1px dashed var(--color-border);
+    border-radius: 12px;
     text-align: center;
-    padding: var(--space-3xl);
   }
 </style>

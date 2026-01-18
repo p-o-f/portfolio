@@ -5,6 +5,7 @@ date: 2024-01-10
 tags: ["browser extension", "firebase", "javascript"]
 link: "https://github.com/yourusername/shareyt"
 featured: true
+current: true
 ---
 
 ShareYT is a browser extension that makes sharing YouTube videos with friends easy and social.
