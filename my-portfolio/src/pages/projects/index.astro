@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import DateRange from '../../components/DateRange.astro';
 import { getCollection } from 'astro:content';
 
 const projects = await getCollection('projects');
-const sortedProjects = projects.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const sortedProjects = projects.sort((a, b) => b.data.startDate.valueOf() - a.data.startDate.valueOf());
 
 // Split into current and past projects
 const currentProjects = sortedProjects.filter(p => p.data.current);
@@ -25,6 +26,7 @@ const pastProjects = sortedProjects.filter(p => !p.data.current);
           {currentProjects.map(project => (
             <a href={`/projects/${project.id}`} class="card project-card">
               <h2>{project.data.title}</h2>
+              <DateRange startDate={project.data.startDate} endDate={project.data.endDate} />
               <p>{project.data.description}</p>
               {project.data.tags && (
                 <div class="tags">
@@ -60,6 +62,7 @@ const pastProjects = sortedProjects.filter(p => !p.data.current);
           {pastProjects.map(project => (
             <a href={`/projects/${project.id}`} class="card project-card">
               <h2>{project.data.title}</h2>
+              <DateRange startDate={project.data.startDate} endDate={project.data.endDate} />
               <p>{project.data.description}</p>
               {project.data.tags && (
                 <div class="tags">

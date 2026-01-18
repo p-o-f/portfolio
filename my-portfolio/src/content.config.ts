@@ -17,7 +17,8 @@ const projects = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
-    date: z.coerce.date(),
+    startDate: z.coerce.date(),                      // When you started the project
+    endDate: z.coerce.date().optional(),             // When you finished (leave empty for ongoing)
     tags: z.array(z.string()).optional(),
     link: z.string().optional(),  // Can be GitHub, YouTube demo, live site, etc.
     image: z.string().optional(),

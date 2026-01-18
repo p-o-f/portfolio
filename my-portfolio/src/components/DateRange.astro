@@ -1,0 +1,32 @@
+---
+interface Props {
+  startDate: Date;
+  endDate?: Date;
+  presentText?: string;  // Customizable "Present" text
+  class?: string;
+}
+
+const { startDate, endDate, presentText = 'Present', class: className } = Astro.props;
+
+// Format date as "Mon YYYY" or "Mon DD, YYYY"
+const formatDate = (date: Date, includeDay = false) => {
+  if (includeDay) {
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+  return date.toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
+};
+
+const start = formatDate(startDate);
+const end = endDate ? formatDate(endDate) : presentText;
+---
+
+<span class:list={['date-range', className]}>
+  {start} — {end}
+</span>
+
+<style>
+  .date-range {
+    font-size: 0.875rem;
+    color: var(--color-text-subtle);
+  }
+</style>
