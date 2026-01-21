@@ -101,4 +101,5 @@ I'm YC founder Bob and I will give you $120k base, 0.1% equity, and a ping pong 
 
 Tech debt accumulates everywhere. Not just in codebases, but in your life. I'm going to make an entire post on this later, but for now...
 
-### 7.
+### 7. "This worked for me"
+Survivorship bias is a real thing. Just because something worked for someone else doesn't mean it will work for you. This is true for literally everything, but I think it's still worth mentioning.
