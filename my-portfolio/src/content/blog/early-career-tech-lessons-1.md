@@ -85,3 +85,16 @@ This is something I hear all the time.
 ### 3. "Networking is everything."
 
 This is also something I hear all the time.
+
+### 4. "You should have X, Y, and Z on your resume. You need metrics that show impact."
+
+This is also something I hear all the time.
+
+### 5. "If you can't get into big tech, go to a startup instead."
+I'm YC founder Bob and I will give you $120k base, 0.1% equity, and a ping pong table. What's not to like? The only catch is you need to work 80 hours a week and we might go out of business in 6 months. Also, your stock options are paper, but they could make you a millionaire if we IPO at a $10billion valuation. Any concerns?
+
+### 6. "If you can't get into big tech, look at fortune 500 companies like Target or CVS. Worst case scenario, go into IT or something similar first."
+
+Tech debt accumulates everywhere. Not just in codebases, but in your life. I'm going to make an entire post on this later, but for now...
+
+### 7.
