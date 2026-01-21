@@ -8,7 +8,7 @@ tags: ["early career", "tech career", "professional growth", "personal growth"]
 <div style="font-size: 1.15rem; margin-bottom: 2rem;">
 Episode 1 of "What No One Tells You About Starting a Career in Tech"
 </div>
-Learn more about the premise of this series [here](https://www.pfaruk.com/blog/early-career-tech-lessons-pilot).
+Learn more about the premise of this series [here](/blog/early-career-tech-lessons-pilot).
 
 ## The Advice You Hear Doesn’t Apply To Everyone
 
@@ -16,7 +16,9 @@ Popular advice isn’t always true. Take every single piece of advice you hear w
 
 Yes, it is true that anyone can give good advice. Joseph Stalin famously said, “_I believe in one thing only, the power of human will._” Would it be so bad for you to agree with that quote in a vacuum? Perhaps not, but context **does** exist and matters.
 
-### Let me apply this idea more specifically to tech. I will focus on advice pertaining to job hunting, since that’s what I’m currently focusing on. Then, I'll debunk some common advice for new grads that makes me roll my eyes.
+### Let me apply this idea more specifically to tech.
+
+#### I will focus on advice pertaining to job hunting, since that’s what I’m currently focusing on. Then, I'll debunk some common advice for new grads that makes me roll my eyes.
 
 Let’s say that you’re someone who is early in your career (either a college student or someone who hasn’t been working in the industry for too long) and you are looking to find a brand new job.
 
@@ -91,6 +93,7 @@ This is also something I hear all the time.
 This is also something I hear all the time.
 
 ### 5. "If you can't get into big tech, go to a startup instead."
+
 I'm YC founder Bob and I will give you $120k base, 0.1% equity, and a ping pong table. What's not to like? The only catch is you need to work 80 hours a week and we might go out of business in 6 months. Also, your stock options are paper, but they could make you a millionaire if we IPO at a $10billion valuation. Any concerns?
 
 ### 6. "If you can't get into big tech, look at fortune 500 companies like Target or CVS. Worst case scenario, go into IT or something similar first."
