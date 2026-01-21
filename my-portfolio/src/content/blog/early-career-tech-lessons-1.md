@@ -5,7 +5,9 @@ date: 1/21/2026
 tags: ["early career", "tech career", "professional growth", "personal growth"]
 ---
 
+<div style="font-size: 1.15rem; margin-bottom: 2rem;">
 **Episode 1 of "What No One Tells You About Starting a Career in Tech"** - learn more about the premise [here](https://www.pfaruk.com/blog/early-career-tech-lessons-pilot).
+</div>
 
 ## The Advice You Hear Doesn’t Apply To Everyone
 
