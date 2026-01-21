@@ -20,7 +20,7 @@ Yes, it is true that anyone can give good advice. Joseph Stalin famously said, �
 Let’s say that you’re someone who is early in your career (either a college student or someone who hasn’t been working in the industry for too long) and you are looking to find a brand new job.
 
 If you go to a non-target school, like say, Oregon State University, then much of the advice you get from a student who goes to a target school will not apply to you. For someone who goes to a target school like MIT, Stanford, UIUC, Georgia Tech, UC Berkley, etc., they will have far more opportunities with career fairs, networking, and recruiting than you will. For a simple example, I’ve seen job postings that are only targeted for certain colleges, like this job listing for Uber:
-[image]
+<img width="830" height="66" alt="image" src="https://github.com/user-attachments/assets/56f2fb08-17d2-4296-aec6-d294af6251bf" />
 
 Of course, there are other unsaid advantages. If you go to a target school, your resume is far more likely to pass through ATS systems and be seen by an actual human (but I digress – I will talk more about pedigree in another post in this series later).
 
@@ -50,15 +50,19 @@ Thus, almost all of his advice was irrelevant for me. Some of it applied. But th
 
 ### By the same token, trusting too much in someone's ethos can be harmful by making you go down the wrong path.
 [google swe tweet]
+1
+<img width="857" height="325" alt="image" src="https://github.com/user-attachments/assets/1c89bc92-ac86-4346-8a8a-720da5671f30" />
+
+2
+<img width="377" height="243" alt="image" src="https://github.com/user-attachments/assets/d3a68d12-0cea-4274-b735-69a5281ee4da" />
+
+3
+<img width="863" height="385" alt="image" src="https://github.com/user-attachments/assets/234dc6e9-e227-4d73-bf89-bed43ec66a22" />
+
+Primeagen vid: https://youtu.be/fgbmGG-xlHI?t=327
 
 ## Debunking Common Advice for New Grad Software Engineers
 
 ### 1. "Just build projects!"
 
 This is probably the most common piece of advice you'll hear, and while it's not entirely wrong, it's often misleading.
-
-## Let's Connect
-
-Feel free to reach out if you want to chat about anything I post here. I'm always happy to connect with fellow developers and curious minds.
-
-Thanks for reading!
