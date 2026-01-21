@@ -1,7 +1,7 @@
 ---
-title: "What No One Tells You About Starting a Career in Tech: Episode 1"
-description: "Episode 1 of my new series focusing specifically on hard truths you should know when starting out in tech."
-date: 1/20/2026
+title: "[tbd]"
+description: "What No One Tells You About Starting a Career in Tech: Episode 1"
+date: 1/21/2026
 tags: ["early career", "tech career", "professional growth", "personal growth"]
 ---
 
