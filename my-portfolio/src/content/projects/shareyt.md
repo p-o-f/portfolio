@@ -3,7 +3,7 @@ title: "ShareYT"
 description: "A browser extension that lets you share YouTube videos with friends and see what they're watching."
 startDate: 6/1/2025
 tags: ["browser extension", "firebase", "javascript"]
-link: "https://github.com/yourusername/shareyt"
+link: "https://github.com/p-o-f/shareyt"
 featured: true
 current: true
 ---
