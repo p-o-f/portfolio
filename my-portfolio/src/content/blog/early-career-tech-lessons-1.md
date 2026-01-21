@@ -103,3 +103,6 @@ Tech debt accumulates everywhere. Not just in codebases, but in your life. I'm g
 
 ### 7. "This worked for me"
 Survivorship bias is a real thing. Just because something worked for someone else doesn't mean it will work for you. This is true for literally everything, but I think it's still worth mentioning.
+
+### 8. "If you can't get a job, start a company"
+More uncommon, but I've seen it around. Crazy tone deaf. 
