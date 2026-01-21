@@ -36,7 +36,7 @@ const featuredProjects = projects.filter(p => p.data.featured).slice(0, siteConf
         {featuredProjects.map(project => (
           <a href={`/projects/${project.id}`} class="card project-card">
             <h3>{project.data.title}</h3>
-            <p class="text-muted">{project.data.description}</p>
+            <p>{project.data.description}</p>
             {project.data.tags && (
               <div class="tags">
                 {project.data.tags.map(tag => (
@@ -65,7 +65,7 @@ const featuredProjects = projects.filter(p => p.data.featured).slice(0, siteConf
               </time>
             </div>
             <h3>{post.data.title}</h3>
-            <p class="text-muted">{post.data.description}</p>
+            <p>{post.data.description}</p>
           </a>
         ))}
       </div>
