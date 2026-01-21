@@ -14,7 +14,7 @@ I'm going to reveal things that I think are important for anyone starting their 
 - These are things that people in the industry will either tell you in a roundabout way or won't tell you about at all.
 - I don't know everything yet. This series will progress at an inconsistent rate as I find out more about these things.
 
-By the way, by "tech industry" I mean a heavy emphasis on software engineering and adjacent fields (PM, solution engineer, forward deployed engineer, etc.), but some of these lessons will be applicable to hardware engineering (think something like FPGA, CPU design, embedded systems, etc.) and other industries in general.
+By the way, by "tech industry" I mean a heavy emphasis on software engineering and adjacent careers (PM, solution engineer, forward deployed engineer, etc.), but some of these lessons will be applicable to hardware engineering (think something like FPGA, CPU design, embedded systems, etc.) and other industries in general.
 
 ## Who is this for?
 

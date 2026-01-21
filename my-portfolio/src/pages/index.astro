@@ -4,10 +4,10 @@ import { getCollection } from 'astro:content';
 import { siteConfig } from '../config';
 
 const posts = await getCollection('blog', ({ data }) => !data.draft);
-const recentPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, 3);
+const recentPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf()).slice(0, siteConfig.ui.maxRecentPosts);
 
 const projects = await getCollection('projects');
-const featuredProjects = projects.filter(p => p.data.featured).slice(0, 3);
+const featuredProjects = projects.filter(p => p.data.featured).slice(0, siteConfig.ui.maxFeaturedProjects);
 ---
 
 <BaseLayout title={`${siteConfig.title}`}>

@@ -12,6 +12,12 @@ export const siteConfig = {
     { href: "/projects", label: "Projects" },
     { href: "/blog", label: "Blog" },
   ],
+
+  // Homepage UI Configuration
+  ui: {
+    maxFeaturedProjects: 3,
+    maxRecentPosts: 3,
+  },
 };
 
 // Online Presence - Add/remove/edit your links here
