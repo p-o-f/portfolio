@@ -2,7 +2,7 @@
 title: "Portfolio Website"
 description: "My personal portfolio website built with Astro to showcase my projects and skills."
 startDate: 1/16/2026
-endDate: Present
+endDate: 1/17/2026
 tags: ["Astro", "TypeScript", "CSS"]
 featured: false
 current: false
