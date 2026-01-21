@@ -55,13 +55,11 @@ Thus, almost all of his advice was irrelevant for me. Some of it applied. But th
 
 Take a look at this viral tweet. Notice the view count.
 <img width="857" height="325" alt="image" src="https://github.com/user-attachments/assets/1c89bc92-ac86-4346-8a8a-720da5671f30" />
-
 Now, look at the poster's qualifications. Principal Engineer at Google.
 <img width="377" height="243" alt="image" src="https://github.com/user-attachments/assets/d3a68d12-0cea-4274-b735-69a5281ee4da" />
-
 Rhetoric like this can alarm inexperienced and upcoming engineers who might not know any better.
 
-You'd likely think one of two things:
+At first glance, you'd likely think one of two things:
 
 1. This Google engineer's team must be incompetent OR
 2. AI is going to replace all software engineers now, we're screwed.
