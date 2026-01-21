@@ -1,34 +1,28 @@
 ---
-title: "[tbd]"
+title: "Tech Job Hunting: Why Following Popular Advice Held Me Back"
 description: "What No One Tells You About Starting a Career in Tech: Episode 1"
 date: 1/21/2026
 tags: ["early career", "tech career", "professional growth", "personal growth"]
 ---
 
-I'm starting something new to take the razor sharp edge off of job hunting.
+## The Advice You Hear Doesn’t Apply To Everyone
 
-## What is this?
+Popular advice isn’t always true. Take every single piece of advice you hear with a grain of salt. <u>I don’t care how credible the person delivering the advice – they could be a CS bootcamp grad or a Principal Engineer at Google. In fact, this credibility might go against them.</u>
 
-I'm going to reveal things that I think are important for anyone starting their career in tech, along with my takeaways from said things.
+Yes, it is true that anyone can give good advice. Joseph Stalin famously said, “_I believe in one thing only, the power of human will._” Would it be so bad for you to agree with that quote in a vacuum? Perhaps not, but context **does** exist and matters.
 
-- These are things that people in the industry will either tell you in a roundabout way or won't tell you about at all.
-- I don't know everything yet. This series will progress at an inconsistent rate as I find out more about these things.
+Let me apply this idea more specifically to tech. I will focus on advice pertaining to job hunting, since that’s what I’m currently focusing on.
 
-By the way, by "tech industry" I mean a heavy emphasis on software engineering and adjacent careers (PM, solution engineer, forward deployed engineer, etc.), but some of these lessons will be applicable to hardware engineering (think something like FPGA, CPU design, embedded systems, etc.) and other industries in general.
+Let’s say that you’re someone who is early in your career (either a college student or someone who hasn’t been working in the industry for too long) and you are looking to find a brand new job.
 
-## Who is this for?
+If you go to a non-target school, like say, Oregon State University, then much of the advice you get from a student who goes to a target school will not apply to you. For someone who goes to a target school like MIT, Stanford, UIUC, Georgia Tech, UC Berkley, etc., they will have far more opportunities with career fairs, networking, and recruiting than you will. For a simple example, I’ve seen job postings that are only targeted for certain colleges, like this job listing for Uber:
+[image]
 
-- Anyone who is just starting their career in the tech industry (mainly SWEs and PMs).
-  - Current students (high school, college, or university)
-  - Recent graduates who are job hunting
-  - Junior engineers
-  - Experienced engineers who might find a younger person's takes amusing or insightful
+Of course, there are other unsaid advantages. If you go to a target school, your resume is far more likely to pass through ATS systems and be seen by an actual human. 
 
-## What to Expect?
+The people at these target schools might literally not be aware of your circumstances. It’s not exactly their fault for giving “incorrect” advice, it’s just advice that doesn’t apply to you.
 
-Blog posts whenever I have an epiphany or learn something new that either unspoken or isn't common knowledge.
-
-- Don't expect any particular schedule - I'll only post when I think a single lesson is substantial or a collection of lessons are ready to be shared.
+## Debunking Common Advice for New Grad SWEs
 
 ## Let's Connect
 
