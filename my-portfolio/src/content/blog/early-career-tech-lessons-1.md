@@ -20,6 +20,7 @@ Yes, it is true that anyone can give good advice. Joseph Stalin famously said, �
 
 #### I will focus on advice pertaining to job hunting, since that’s what I’m currently focusing on. Then, I'll debunk some common advice for new grads that makes me roll my eyes.
 
+
 Let’s say that you’re someone who is early in your career (either a college student or someone who hasn’t been working in the industry for too long) and you are looking to find a brand new job.
 
 If you go to a non-target school, like say, Oregon State University, then much of the advice you get from a student who goes to a target school will not apply to you. For someone who goes to a target school like MIT, Stanford, UIUC, Georgia Tech, UC Berkley, etc., they will have far more opportunities with career fairs, networking, and recruiting than you will. For a simple example, I’ve seen job postings that are only targeted for certain colleges, like this job listing for Uber:
@@ -57,6 +58,8 @@ Take a look at this viral tweet. Notice the view count.
 <img width="857" height="325" alt="image" src="https://github.com/user-attachments/assets/1c89bc92-ac86-4346-8a8a-720da5671f30" />
 Now, look at the poster's qualifications. Principal Engineer at Google.
 <img width="377" height="243" alt="image" src="https://github.com/user-attachments/assets/d3a68d12-0cea-4274-b735-69a5281ee4da" />
+
+
 Rhetoric like this can alarm inexperienced and upcoming engineers who might not know any better.
 
 At first glance, you'd likely think one of two things:
