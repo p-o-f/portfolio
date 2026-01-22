@@ -3,6 +3,7 @@ title: "Tech Job Hunting: Why Following Popular Advice Held Me Back"
 description: "What No One Tells You About Starting a Career in Tech: Episode 1"
 date: 1/21/2026
 tags: ["early career", "tech career", "professional growth", "personal growth"]
+draft: true
 ---
 
 <div style="font-size: 1.15rem; margin-bottom: 2rem;">
