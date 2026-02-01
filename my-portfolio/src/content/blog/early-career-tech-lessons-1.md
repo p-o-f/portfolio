@@ -139,7 +139,8 @@ If 2) is true, skip the X, Y, Z stuff. It's useless and you don't need it anyway
 For me, 2) was true for most of the time I was job hunting. I still got interviews.
 
 If you're going to add in metrics that make as much sense as those shown in this Apple chart, don't bother:
-[image]
+<img width="1080" height="607" alt="image" src="https://github.com/user-attachments/assets/5b00a530-2e1b-4f85-a640-4fd307e05c2a" />
+(The primary issue is that the y-axis has no unit, but also they don't even mention what CPUs they're comparing to...)
 
 ### 4. "If you can't get into big tech, go to a startup instead."
 
