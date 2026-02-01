@@ -305,6 +305,11 @@ hr {
   gap: var(--space-lg);
 }
 
+.small {
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
 /* ===== Prose (for blog content) ===== */
 .prose h2 {
   margin-top: var(--space-2xl);
