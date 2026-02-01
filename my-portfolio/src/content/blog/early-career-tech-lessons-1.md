@@ -9,6 +9,7 @@ draft: false
 <div style="font-size: 1.15rem; margin-bottom: 2rem;">
 Episode 1 of "What No One Tells You About Starting a Career in Tech"
 </div>
+
 Learn more about the premise of this series [here](https://www.pfaruk.com/blog/early-career-tech-lessons-pilot)
 
 ## The Advice You Hear Doesn’t Apply To Everyone
