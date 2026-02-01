@@ -119,8 +119,8 @@ This also applies to meeting a random person at a career fair or anywhere in rea
 
 ### 3. "You should have X, Y, and Z on your resume. You NEED metrics that show impact."
 
-X = accomplishment ("improved system performance")
-Y = metric ("by 30%")
+X = accomplishment ("improved system performance")<br>
+Y = metric ("by 30%")<br>
 Z = how ("using caching algorithms")
 
 This is something recruiters specifically often say. X and Z are necessary, but Y is very much optional. Recruiters act like it's required.
