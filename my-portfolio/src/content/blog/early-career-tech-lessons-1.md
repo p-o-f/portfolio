@@ -181,7 +181,7 @@ At slower, normal companies, you will often face:
 
 Most of these are self explanatory, but the downlevel risk is something I'll briefly touch on. Let's use a simple example. Say you work at Verizon as a software engineer for 8 years. If you go to interview at Google, you will likely be interviewing for something like L4 (mid level engineer) even if you're "senior" at Verizon. At a certain point, especially past mid-level, seniority at a "slower, normal company" doesn't proportionally scale with seniority at a more sought-after firm. If you started at Google, you will almost certainly make L4 in just 2 or 3 years, rather than the 8 you needed at Verizon to just "hop" later. If you try to hop from Verizon into Google just 2 or 3 years in, you will interview for L3 or L4 and be able to get a more fair market rate value for your labor. Be aware of this downlevel risk and don't get stuck.
 
-Is it worth it to you to be an engineer at one of these slower companies? Are you ok learning things at a slow rate? Is your career and your work just a paycheck to you and nothing more? Nothing wrong with that, go ahead and freely follow the advice in #5.
+Is it worth it to you to be an engineer at one of these slower companies? Are you ok learning things at a slow rate? Nothing wrong with that, go ahead and freely follow the advice in #5.
 
 If none of those things apply to you, follow the advice in #5 cautiously and keep all the caveats in mind. Try to get out when you can.
 
@@ -198,3 +198,7 @@ You need a job to live and make money. Not everyone has the option to live with 
 If the person giving the advice is implying you should "start a company" just for the learning experience, that's fine. But 90%+ of startups fail and many do not ever make a single dollar. Most inexperienced students or newgrads trying to do this will feel overwhelmed by this notion.
 
 It's better to give the "do more side projects" kind of advice than this "start a company" advice, because that's more digestible and doesn't come with a connotation that invokes a looming sense of infinite work to be done and a massive sense of doubt.
+
+## Conclusion
+
+I think I've provided a logical analysis of the claims brought up here, but obviously, I have my own biases and I'm early in my career. As such, YMMV. My friends pointed out particularly that I might've been over the top with my debunking of advice point #5, and that's probably because I'm facing that scenario myself right now. Take my claims with a grain of salt as I suggested earlier. I would love to hear any of your opinions on this topic, whether that be agreement or disagreement, so feel free to reach out. Thanks for reading!
