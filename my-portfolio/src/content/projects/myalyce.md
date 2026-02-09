@@ -1,8 +1,10 @@
 ---
 title: "MyAlyce - Smartwatch Health Monitoring Platform"
 description: "A comprehensive health data monitoring application for Amazfit Balance smartwatch supporting individuals in addiction recovery."
-startDate: 1/1/2025
-tags: ["Zepp OS", "JavaScript", "Node.js", "Google Drive API", "OAuth 2.0", "IoT"]
+startDate: 9/1/2025
+endDate: 4/1/2025
+tags:
+  ["Zepp OS", "JavaScript", "Node.js", "Google Drive API", "OAuth 2.0", "IoT"]
 link: "https://github.com/MyAlyce/ASU_OD_detection_project"
 featured: true
 current: false
@@ -19,27 +21,32 @@ Individuals recovering from substance abuse need continuous support and monitori
 MyAlyce provides comprehensive health monitoring with cloud integration:
 
 ### Real-Time Health Monitoring
+
 - **Heart Rate Tracking**: Continuous heart rate monitoring with resting and active measurements
 - **Sleep Analysis**: Comprehensive sleep tracking including total time, sleep stages (Deep, Light, REM, Wake), quality scores, and start/end times
 
 ### Privacy-First Design
+
 - Granular user consent for each health metric
 - Permission settings persistently stored on device
 - Users control exactly what data is shared
 
 ### Cloud Data Sync
+
 - Automated Google Drive folder creation
 - Daily Google Sheets generation for organized data storage
 - Periodic sync (configurable intervals) to minimize battery impact
 - Data headers automatically added to sheets
 
 ### Support Network Integration
+
 - Share health data folders with trusted contacts via email
 - Role-based permissions (read-only access for contacts)
 - Easy contact management through settings interface
 - Remove access at any time
 
 ### Emergency Alert System
+
 - Configure heart rate thresholds for alerts
 - Set up emergency contact phone numbers
 - Automatic notifications when thresholds are exceeded
@@ -48,6 +55,7 @@ MyAlyce provides comprehensive health monitoring with cloud integration:
 ## Tech Stack
 
 ### Client (Smartwatch App)
+
 - **Zepp OS** - Native smartwatch platform for Amazfit Balance
 - **JavaScript** - Core application logic
 - **@zeppos/zml** - Zepp OS framework for UI and base services
@@ -55,10 +63,12 @@ MyAlyce provides comprehensive health monitoring with cloud integration:
 - **Zeus CLI** - Development and deployment tooling
 
 ### Server
+
 - **Node.js** with Express - REST API backend
 - **CORS** middleware for cross-origin requests
 
 ### Integrations
+
 - **Google Drive API** - Cloud storage for health data
 - **Google Sheets API** - Structured data logging with daily sheets
 - **OAuth 2.0** - Secure authentication flow
@@ -66,6 +76,7 @@ MyAlyce provides comprehensive health monitoring with cloud integration:
 ## Architecture Highlights
 
 ### Client-Side Architecture
+
 - **App Lifecycle Management**: Initialization, heart rate monitoring startup, and database cleanup
 - **Background Services**: Continuous monitoring, Google Drive folder management, daily sheet creation, and periodic data sync
 - **Google API Integration**: OAuth 2.0 authentication, folder/sheet management, token refresh
@@ -73,6 +84,7 @@ MyAlyce provides comprehensive health monitoring with cloud integration:
 - **Settings Interface**: Tab-based navigation, Google authentication, email-based folder sharing, emergency contact configuration
 
 ### Key Features
+
 - **Offline-First**: Local TSDB ensures data isn't lost even without connectivity
 - **State Management**: Global storage accessible throughout the app
 - **Modular Design**: Separation of concerns between UI, services, and API layers
@@ -91,21 +103,25 @@ MyAlyce provides comprehensive health monitoring with cloud integration:
 ## Technical Challenges Solved
 
 ### Battery Life Optimization
+
 - Configurable sync intervals (default: 1 minute data collection, periodic uploads)
 - Efficient use of background services
 - Local storage minimizes network calls
 
 ### OAuth on Wearables
+
 - Companion app handles authentication flow
 - Settings sync between watch and phone
 - Token storage with expiration handling
 
 ### Data Organization
+
 - Automatic daily sheet creation
 - Structured folder hierarchy in Google Drive
 - Headers automatically added to new sheets
 
 ### Privacy & Consent
+
 - Granular permission system
 - User explicitly enables each metric
 - Easy sharing management interface
