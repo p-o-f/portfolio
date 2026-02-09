@@ -1,7 +1,7 @@
 ---
 title: "MyAlyce - Smartwatch Health Monitoring Platform"
 description: "A comprehensive health data monitoring application for Amazfit Balance smartwatch supporting individuals in addiction recovery."
-startDate: 9/1/2025
+startDate: 9/1/2024
 endDate: 4/1/2025
 tags:
   ["Zepp OS", "JavaScript", "Node.js", "Google Drive API", "OAuth 2.0", "IoT"]
